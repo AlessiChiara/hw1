@@ -1,0 +1,197 @@
+:root {
+   
+    --rich-black-fogra-29_50: hsl(210, 26%, 11%, 0.5);
+    --rich-black-fogra-29-1: hsl(210, 26%, 11%);
+    --rich-black-fogra-29-2: hsl(210, 50%, 4%);
+    --silver-metallic: hsl(212, 9%, 67%);
+    --coquelicot_20: hsla(12, 98%, 52%, 0.2);
+    --coquelicot_10: hsla(12, 98%, 52%, 0.1);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --cadet-gray: hsl(214, 15%, 62%);
+    --light-gray: hsl(0, 0%, 80%);
+    --coquelicot: hsl(12, 98%, 52%);
+    --gainsboro: hsl(0, 0%, 88%);
+    --white_20: hsl(0, 0%, 100%, 0.2);
+    --white_10: hsl(0, 0%, 100%, 0.1);
+    --black_10: hsl(0, 0%, 0%, 0.1);
+    --white: hsl(0, 0%, 100%);
+    --max-width: 1200px;
+    --primary-color: #111317;
+    --primary-color-light: #1f2125;
+    --primary-color-extra-light: #35373b;
+    --yellow: #fed330;
+    --red: #e74c3c;
+    --white: #fff;
+    --black: #222;
+    --light-color:#777;
+    --border: .2rem solid var(--black)
+    --text-light: #d1d5db;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+.profile-icon {
+    color: var(--coquelicot);
+}
+
+.profile-icon:hover {
+    color: var(--color);
+}
+
+.header {
+    background-color: var(--rich-black-fogra-29-1);
+}
+
+.user-details{
+    margin-top: 20rem;
+}
+.user-details .user{
+    max-width: 50rem;
+    margin:0 auto;
+    border:.2rem solid black;
+    padding:2rem;
+ }
+ 
+ .user-details .user img{
+    width: 100%;
+    height: 20rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+ }
+ 
+ .user-details .user p{
+    padding:1rem 0;
+    line-height: 1.5;
+    font-size: 2rem;
+ }
+ 
+ .user-details .user p span{
+    color:var(--black);
+ }
+ 
+ .user-details .user p i{
+    margin-right: 1rem;
+    color:var(--primary-color);
+ }
+ 
+ .user-details .user .address{
+    margin-top: 1rem;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.products {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.products .box-container .box .fa-times{
+    position: absolute;
+    top:1rem; right: 1rem;
+    background-color: var(--coquelicot);
+    color: var(--white);
+    border: .2rem solid var(--primary-color);
+    line-height: 4rem;
+    height: 4.3rem;
+    width: 4.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.products .box-container .box .fa-times:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33rem);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    border: .2rem solid var(--primary-color);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.products .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.products .box-container .box .name{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin:1rem 0;
+}
+
+.products .box-container .box .flex{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    margin-top: 1rem;
+}
+
+.products .box-container .box .flex .price{
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.products .box-container .box .flex .price span{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.products .more-btn{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.delete-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1.3rem 3rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+.delete-btn{
+    background-color: var(--coquelicot);
+    color: var(--white);
+}
+
+
+.delete-btn:hover{
+    letter-spacing: .2rem;
+}
+
+@media (max-width:450px){
+    .products .cart-total{
+        justify-content: center;
+    }
+}
+.products .more-btn{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+ 
+header .span {
+    color: var(--white);
+}
+}
